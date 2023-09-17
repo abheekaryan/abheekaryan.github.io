@@ -11,7 +11,10 @@ body {
 .form-group {
     margin-bottom: 20px;
 }
-
+.footer{
+	padding: 20px;
+	margin-left: 40px;
+}
 label {
     display: block;
     margin-bottom: 5px;
