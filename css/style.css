@@ -121,7 +121,30 @@ body {
   display: none;
   order: 1;
 }
-
+.table-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #47b2e4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+}
+.trigger {
+  cursor: pointer;
+  color: #fff
+}
+.container:hover .table-container {
+  display: block;
+}
+.table-item {
+  margin-bottom: 5px;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
 @media screen and (max-width: 1023px) {
   .navbar .logo a {
     font-size: 1.5rem;
