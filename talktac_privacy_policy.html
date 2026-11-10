@@ -13,25 +13,31 @@
 <h2>Privacy Policy</h2>
 <br />
 <h4>Introduction</h4>
-<p>AlterZehn develops TalkTac (Android package com.alterzehn.talktac), a free app that combines two-player online games with group chat and user stories. This policy explains what information TalkTac collects, how it is used, who processes it, and how you can delete it. By using TalkTac you agree to this policy.</p>
+<p>AlterZehn develops TalkTac (Android package com.alterzehn.talktac), a free app that combines two-player online games with group chat, user stories and, in versions that include them, voice rooms, music status and player bookmarks. This policy covers every TalkTac version published under this package; features that a version does not include collect nothing. It explains what information TalkTac collects, how it is used, who processes it, and how you can delete it. By using TalkTac you agree to this policy.</p>
 <br />
 <h4>Information We Collect</h4>
 <ul>
-<li><b>Account information.</b> You can sign in with Google or continue as a guest. Both use Firebase Authentication (Google). With Google sign-in we receive your Google account's email address, name and profile picture. Guests get an anonymous account with no personal details. Each account has a unique user ID (UID).</li>
+<li><b>Account information.</b> You can sign in with Google, sign in with an email address and password, or continue as a guest. All three use Firebase Authentication (Google). With Google sign-in we receive your Google account's email address, name and profile picture. With email sign-in we receive the email address you enter; your password is handled by Firebase Authentication and is never stored by us. Guests get an anonymous account with no personal details. Each account has a unique user ID (UID).</li>
 <li><b>Profile.</b> The username you choose and your profile picture.</li>
-<li><b>Images and stories.</b> Profile pictures and story images you upload are stored on Cloudinary, our image host. Stories expire automatically after about 12 hours and their images are then removed.</li>
+<li><b>Images and stories.</b> Profile pictures and story images you upload are stored on Cloudinary, our image host, in a folder linked to your user ID. Stories expire automatically after about 12 hours and their images are then removed.</li>
 <li><b>Game data.</b> Scores, match results, recent players, online presence and game invitations, stored in Google Firebase Realtime Database.</li>
 <li><b>Chat messages.</b> Group chat and in-game messages are relayed in real time by our game server hosted on Render. Messages are not stored on the server after delivery. If you report a message, its text is saved with the report as evidence.</li>
+<li><b>Voice rooms (microphone).</b> In versions with voice rooms, TalkTac asks for microphone permission when you join a room and uses the microphone only while you are in a room; a notification is shown for as long as the microphone is in use. Your voice is streamed live and encrypted to the other people in the room, directly between devices or through a relay server when a direct connection is not possible. Voice is never recorded or stored by TalkTac. Our server keeps the list of open rooms (room name, host, country and the names of the people in it) while a room exists, and counts the voice minutes you use each day (India Standard Time day) to apply the free daily limit.</li>
+<li><b>Country for voice rooms.</b> To show free users voice rooms from their own country, our server works out your country from your IP address (country level only). If it cannot, the app sends the country code of your SIM card or mobile network. We do not collect your precise location.</li>
+<li><b>Music status.</b> In versions with music status, you can pick an audio file with your phone's file picker; TalkTac reads only that file, cuts a clip of up to 10 seconds on your phone and uploads just the clip. Our server stores the clip on Cloudinary and shows it on your profile to signed-in users (except people you have blocked) for 12 hours, after which it is deleted. We also count how many music statuses you post each day to apply the daily limit. The song title and file name are not uploaded.</li>
+<li><b>Bookmarks.</b> Players you bookmark are saved in a private list that only you can see.</li>
+<li><b>Premium status.</b> If your account has Premium, a record of it (and its end date, if any) is stored so that Premium features unlock. Premium cannot be bought in the app yet; when it can, payments will be handled by Google Play and we will not receive your card details.</li>
 <li><b>Device identifier.</b> A pseudonymous device ID derived from your device's Android ID is stored with your account to enforce bans and prevent abuse.</li>
 <li><b>Push notification tokens.</b> Firebase Cloud Messaging tokens, used to send you game invitations and notifications.</li>
-<li><b>App logs and crash reports.</b> When errors or crashes occur, a short, masked error description (with your user ID, app version and device model) is uploaded to our database so we can fix problems.</li>
+<li><b>App logs and crash reports.</b> When errors or crashes occur, a short, masked error description (with your user ID, app version and device model) is uploaded to our database so we can fix problems. Test versions of the app may also save a crash log file in your phone's Download/TalkTac folder; it stays on your phone unless you choose to share it.</li>
 <li><b>IP addresses.</b> Our servers and service providers (Google Firebase, Render, Cloudinary) receive your IP address as part of normal network communication.</li>
-<li><b>Reports, blocks and moderation data.</b> Reports you make or receive (including the reported message text or image), user blocks you set, ban records and report limits.</li>
+<li><b>Reports, blocks and moderation data.</b> Reports you make or receive (including the reported message text, image or music clip), user blocks you set, ban records and report limits.</li>
 </ul>
 <br />
 <h4>How We Use Your Information</h4>
 <ul>
-<li>To provide the games, chat, stories, profiles and notifications.</li>
+<li>To provide the games, chat, stories, profiles, voice rooms, music status, bookmarks and notifications.</li>
+<li>To apply free daily limits (voice minutes, music status posts) and unlock Premium features.</li>
 <li>To keep the community safe: profanity filtering in chat, reports, blocking, bans and device bans.</li>
 <li>To diagnose crashes and improve the app.</li>
 </ul>
@@ -40,37 +46,31 @@
 <p>Before you upload a profile picture or story, TalkTac runs an automatic nudity check on your device. This check happens entirely on your phone; the image is not sent anywhere for it.</p>
 <br />
 <h4>Blocking and Reporting</h4>
-<p>You can block other users so their messages, invitations and presence are hidden from you, and you can report users, messages and stories. Reports are reviewed by our moderators, who may ban accounts or devices that violate our rules.</p>
+<p>You can block other users so their messages, invitations and presence are hidden from you and they can no longer see your music status, and you can report users, messages, profiles, stories, music statuses and voice room behaviour, including copyright or other intellectual-property problems. Reports are reviewed by our moderators, who may remove content and ban accounts or devices that violate our rules.</p>
 <br />
 <h4>Sharing Your Information</h4>
-<p>TalkTac shows no ads and we do not sell or trade your personal information. Your data is processed only by our service providers to run the app: Google Firebase (authentication, database, notifications), Cloudinary (image hosting) and Render (game and chat server). Your username, profile picture, scores, stories and chat messages are visible to other users. We may disclose information when required by law or to protect the safety of users.</p>
+<p>TalkTac shows no ads and we do not sell or trade your personal information. Your data is processed only by our service providers to run the app: Google Firebase (authentication, database, notifications), Cloudinary (image and music clip hosting) and Render (game, chat and voice server). Your username, profile picture, scores, stories, music status and chat messages are visible to other users, and your voice is heard by the people in the voice rooms you join. We may disclose information when required by law or to protect the safety of users.</p>
 <br />
 <h4>Data Security</h4>
-<p>All data is sent over encrypted connections (HTTPS/TLS). Access to the database is restricted by security rules and server-side token verification.</p>
+<p>All data is sent over encrypted connections (HTTPS/TLS), and voice is encrypted in transit. Access to the database is restricted by security rules and server-side token verification.</p>
 <br />
 <h4>Data Retention</h4>
-<ul>
-<li>Account, profile and game data are kept until you delete your account.</li>
-<li>Stories are removed after about 12 hours.</li>
-<li>Chat messages are not stored after delivery, except as report evidence.</li>
-<li>Guest accounts' data is deleted when the guest logs out.</li>
-<li>Reports, bans and device ban records may be kept for up to 12 months to keep the community safe, and are then deleted.</li>
-</ul>
+<p>Account, profile, game data and bookmarks are kept until you delete your account. Stories and music statuses are removed after about 12 hours. Chat messages are not stored after delivery, except as report evidence. Voice is not stored at all; open-room lists exist only while a room is open. Guest accounts and their data are deleted when the guest logs out. Reports, bans and device ban records may be kept for up to 12 months to keep the community safe, and are then deleted. Masked error reports are kept while we need them to fix problems; they are not removed automatically when you delete your account, but we will remove them if you email us.</p>
 <br />
 <h4>Deleting Your Account</h4>
-<p>You can delete your account in the app from Profile or About &rarr; Delete account. This removes your profile, images, scores and other data linked to your account. You can also request deletion by emailing <a href="mailto:alterzehn02@gmail.com">alterzehn02@gmail.com</a>. See <a href="/talktac_account_deletion.html">how to delete your account</a>.</p>
+<p>You can delete your account in the app from Profile or About &rarr; Delete account (you confirm with Google sign-in or your password). This deletes your account, username, profile picture, score, stories, music status and usage counts, bookmarks, blocked list, presence, notification tokens, Premium record, and the profile pictures, story images and music clips you uploaded with current versions of the app. Reports, bans and anti-abuse device records are kept as described above. Images uploaded with very old versions of the app (before Cloudinary) cannot be traced to you automatically; email us and we will remove them. You can also request deletion by emailing <a href="mailto:alterzehn02@gmail.com">alterzehn02@gmail.com</a>. See <a href="/talktac_account_deletion.html">how to delete your account</a>.</p>
 <br />
 <h4>Children's Privacy</h4>
-<p>TalkTac is not directed to children under 13, and we do not knowingly collect personal information from children under 13. Guest users cannot use chat. If you believe a child under 13 has provided us information, contact us and we will delete it.</p>
+<p>TalkTac is only for people aged 13 or older; you confirm this before using the app. We do not knowingly collect personal information from children under 13. Guest users cannot use chat or voice rooms. If you believe a child under 13 has provided us information, contact us and we will delete it.</p>
 <br />
 <h4>Permissions</h4>
-<p>TalkTac uses Internet and network state access, and the notification permission to show invitations. It does not access your contacts, location, camera, microphone or files other than images you choose to upload.</p>
+<p>TalkTac uses Internet and network state access and the notification permission (invitations and the voice room notification). Versions with voice rooms also use the microphone, only while you are in a voice room, and keep a foreground service running with a visible notification while you are connected. TalkTac does not access your contacts, precise location or camera, and it reads only the images and audio files you pick yourself.</p>
 <br />
 <h4>Cookies</h4>
 <p>The app does not use cookies.</p>
 <br />
 <h4>Changes to This Policy</h4>
-<p>We may update this policy and will post changes on this page. This policy is effective as of 1 November 2026.</p>
+<p>We may update this policy and will post changes on this page. This policy was last updated on 10 November 2026.</p>
 <br />
 <h4>Contact Us</h4>
 <p>Questions about this policy or TalkTac's data handling: <a href="mailto:alterzehn02@gmail.com">alterzehn02@gmail.com</a>.</p>
