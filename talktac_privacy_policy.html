@@ -30,7 +30,7 @@
 <li><b>Premium status.</b> If your account has Premium, a record of it (and its end date, if any) is stored so that Premium features unlock. Premium cannot be bought in the app yet; when it can, payments will be handled by Google Play and we will not receive your card details.</li>
 <li><b>Device identifier.</b> A pseudonymous device ID derived from your device's Android ID is stored with your account to enforce bans and prevent abuse.</li>
 <li><b>Push notification tokens.</b> Firebase Cloud Messaging tokens, used to send you game invitations and notifications.</li>
-<li><b>App logs and crash reports.</b> When errors or crashes occur, a short, masked error description (with your user ID, app version and device model) is uploaded to our database so we can fix problems. Test versions of the app may also save a crash log file in your phone's Download/TalkTac folder; it stays on your phone unless you choose to share it.</li>
+<li><b>No crash reports or diagnostics.</b> TalkTac does not collect crash logs, error reports, diagnostics or analytics, and keeps no log files on your phone. (Version 2.0.2 and earlier uploaded short, masked error descriptions; we no longer accept or keep them.)</li>
 <li><b>IP addresses.</b> Our servers and service providers (Google Firebase, Render, Cloudinary) receive your IP address as part of normal network communication.</li>
 <li><b>Reports, blocks and moderation data.</b> Reports you make or receive (including the reported message text, image or music clip), user blocks you set, ban records and report limits.</li>
 </ul>
@@ -40,7 +40,6 @@
 <li>To provide the games, chat, stories, profiles, voice rooms, music status, bookmarks and notifications.</li>
 <li>To apply free daily limits (voice minutes, music status posts) and unlock Premium features.</li>
 <li>To keep the community safe: profanity filtering in chat, reports, blocking, bans and device bans.</li>
-<li>To diagnose crashes and improve the app.</li>
 </ul>
 <br />
 <h4>On-Device Image Check</h4>
@@ -56,7 +55,7 @@
 <p>All data is sent over encrypted connections (HTTPS/TLS), and voice is encrypted in transit. Access to the database is restricted by security rules and server-side token verification.</p>
 <br />
 <h4>Data Retention</h4>
-<p>Account, profile, game data and bookmarks are kept until you delete your account. Stories and music statuses are removed after about 12 hours. Chat messages are not stored after delivery, except as report evidence. Voice is not stored at all; open-room lists exist only while a room is open. Guest accounts and their data are deleted when the guest logs out. Reports, bans and device ban records may be kept for up to 12 months to keep the community safe, and are then deleted. Masked error reports are kept while we need them to fix problems; they are not removed automatically when you delete your account, but we will remove them if you email us.</p>
+<p>Account, profile, game data and bookmarks are kept until you delete your account. Stories and music statuses are removed after about 12 hours. Chat messages are not stored after delivery, except as report evidence. Voice is not stored at all; open-room lists exist only while a room is open. Guest accounts and their data are deleted when the guest logs out. Reports, bans and device ban records may be kept for up to 12 months to keep the community safe, and are then deleted.</p>
 <br />
 <h4>Deleting Your Account</h4>
 <p>You can delete your account in the app from Profile or About &rarr; Delete account (you confirm with Google sign-in or your password). This deletes your account, username, profile picture, score, stories, music status and usage counts, bookmarks, blocked list, presence, notification tokens, Premium record, and the profile pictures, story images and music clips you uploaded with current versions of the app. Reports, bans and anti-abuse device records are kept as described above. Images uploaded with very old versions of the app (before Cloudinary) cannot be traced to you automatically; email us and we will remove them. You can also request deletion by emailing <a href="mailto:alterzehn@gmail.com">alterzehn@gmail.com</a>. See <a href="/talktac_account_deletion.html">how to delete your account</a>.</p>
@@ -71,7 +70,7 @@
 <p>The app does not use cookies.</p>
 <br />
 <h4>Changes to This Policy</h4>
-<p>We may update this policy and will post changes on this page. This policy was last updated on 10 November 2026.</p>
+<p>We may update this policy and will post changes on this page. This policy was last updated on 19 November 2026.</p>
 <br />
 <h4>Contact Us</h4>
 <p>Questions about this policy or TalkTac's data handling: <a href="mailto:alterzehn@gmail.com">alterzehn@gmail.com</a>.</p>
